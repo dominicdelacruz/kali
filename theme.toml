@@ -1,10 +1,10 @@
 name = 'Kali'
 license = 'MIT'
-licenselink = 'https://github.com/craftymutt/kali/LICENSE'
+licenselink = 'https://github.com/dominicdelacruz/kali/LICENSE'
 description = 'New theme'
 
 # The home page of the theme, where the source can be found
-homepage = 'https://github.com/craftymutt/kali'
+homepage = 'https://github.com/dominicdelacruz/kali'
 
 # If you have a running demo of the theme
 demosite = 'https://spyogenes.com/'
