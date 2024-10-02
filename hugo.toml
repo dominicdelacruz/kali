@@ -1,0 +1,29 @@
+baseURL = 'https://spyogenes.com/'
+languageCode = 'en-US'
+title = 'S.Pyogenes'
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'CV'
+#pageRef = '/cv'
+url = '/cv/'
+weight = 20
+
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 30
+
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 40
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
