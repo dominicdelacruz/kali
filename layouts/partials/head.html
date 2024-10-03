@@ -1,5 +1,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
-{{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
+
+    <link rel="canonical" href="{{ .Permalink }}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+{{ partialCached "head/all.min.html" . }}
+{{ $opts := dict "targetPath" "css/style.css" }}
+{{ with resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS $opts | fingerprint }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
