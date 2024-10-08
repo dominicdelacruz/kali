@@ -5,13 +5,13 @@ title = 'S.Pyogenes'
 [[menus.main]]
 name = 'Home'
 pageRef = '/'
-weight = 10
+weight = 20
 
 [[menus.main]]
 name = 'CV'
 #pageRef = '/cv'
 url = '/cv/'
-weight = 20
+weight = 10
 
 [[menus.main]]
 name = 'Posts'
@@ -27,3 +27,24 @@ weight = 40
   [module.hugoVersion]
     extended = false
     min = "0.116.0"
+
+#googleAnalytics = ""
+
+[params]
+enableMetaTags = true
+colorLight = "#fff"
+colorDark = "#666"
+colorPageBackground = "#ddd"
+#colorPrimary = "#e3bfb8"
+colorPrimary = "#8b8abe"
+colorSecondary = "#aaa"
+colorIconPrimary = "#fff"
+colorIconBackground = "#e3bfb8"
+colorRightColumnBackground = "#f5f5f5"
+colorRightColumnHeadingText = "#666"
+colorRightColumnBodyText = "#666"
+colorRightColumnIconPrimary = "#fff"
+colorRightColumnIconBackground = "#e3bfb8"
+pages = 1
+# Set this param to 'true' to swap the bar positions
+swapColumns = false

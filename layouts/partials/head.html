@@ -3,7 +3,10 @@
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ partialCached "head/js.html" . }}
 
+<!--
     <link rel="canonical" href="{{ .Permalink }}" />
+-->
+    <link rel="canonical" href="https://spyogenes.com" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
